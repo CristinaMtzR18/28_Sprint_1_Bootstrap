@@ -3,50 +3,36 @@
 *{
     margin: 0;
     padding: 0;
+    /*Las fuentes que estan saque de google font*/
+    font-family: 'Open Sans', 'Courgette';
 }
-body{
-     font-size: 16px;
-     /*Las fuentes que estan saque de google font*/
-     font-family: 'Open Sans', 'Courgette';
-}
-a{
-	/*Para quitar los efectos por default de la etiqueta <a> para links*/
-	text-decoration: none;
-}
-								/*** HEADER ***/
+							/*** HEADER ***/
 header{
-    background: #1c1821;
-    height: 25%;
-    width: 100%;
+    background-color: #1c1821;
+}
+nav.navbar {
+    background-color: #1c1821;
 }
 /*Para el logo*/
 .logo{
-    background: url("../image/header-logo.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0;
+    margin-top: -6%; 
     width: 275px;
     height: 80px;
 }
 								/*** BANNER ***/
-
 .bg-lirios{
 	background: url("../image/header-image.jpg");
 	background-size: cover;
 	padding: 3%
 }
-
 .bannerNegro{
 	width: 50%;
-	height: 220px;
+	height: 200px;
 	margin: 10% 25%;
 	padding: 3%;
 }
-
 							/*** BUSQUEDA ***/
 .search{
-	display: block;
-	margin: auto;
 	border-radius: 4px;
 	width: 100%;
 	height: 50px;
@@ -55,8 +41,8 @@ header{
 }
 							/*** REDES SOCIALES ***/
 .icono{
-	height: 35px;
-	width: 35px;
+	height: 30px;
+	width: 30px;
 	border-radius: 100%;
 	text-align: center;
 	padding-top: 6px;
@@ -68,7 +54,6 @@ iframe{
 	width: 100%;
 	height: 350px;
 }
-
 								/*** UTILITIES ***/
 /*Fondos de color*/
 .bg-purple{
@@ -98,8 +83,10 @@ iframe{
 .pd-5{
 	padding: 5%;
 }
-
 								/*** Responsive ***/
+/*Desde mi punto de vista, estas media queries ya no son necesarios porque en Bootstrap ya estan definidos cuatro
+breakpoints que nos ayudan a que la página sea responsive, para este ejercicio solo se usaron dos, la que marca para
+celuar y pantalla de computadora*/
 @media screen and (max-width : 600px) {
 }
 @media screen and (max-width: 920px) {
