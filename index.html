@@ -1,44 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8">
+		<meta charset="UTF-8"> <!-- Me sirve para colocar acentos y otros caracteres especiales -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Hace que mi página sea compatible con Internet Explorer -->
 		<!-- VIEWPORT - Cuando estamos hablando de dispositivos móviles, no corresponde al tamaño real de la pantalla en píxeles, sino al espacio que la pantalla está emulando que tiene 
 			- "device-width", que es una medida que hace referencia a la anchura de la pantalla del dispositivo, así que con width=device-width conseguimos que el viewport sea igual a la anchura real de la pantalla del dispositivo, de modo que no se tratará de emular una pantalla mayor de lo que realmente es y veremos los píxeles reales.
 			- Con initial-scale=1 conseguimos que no se haga zoom sobre el documento. Es bien simple, el contenido de la web no se transformará, ni se agrandará, ni se hará menor.-->
-		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 		<title>Flatness: Responsive Blog</title> <!-- Iniciando  -->
 		<link rel="shortcut icon" href="image/ico/favicon.ico"> <!-- "shortcut icon" nos indicaque es tipo icono, relación -->
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/font-awesome.css">
-		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+		<link rel="stylesheet" href="css/main.css">
+
 	</head>
 	<body class="bg-purple">
 		<!-- Inserta aqui tu codigo -->
 		<header>
 			<div class="container">
-				<div class="row logo">
-					<div class="col-xl-12">
-						<input type="checkbox" id="btn-menu">
-						<label for="btn-menu"><img src="image/ico/menu.png" alt="menu"></label>
-						<nav class="menu">
-			        		<ul>
-			            		<li><a href="#">LIFESTYLE</a></li>
-			            		<li><a href="#">FLOWERS</a></li>
-			            		<li><a href="#">FASHION</a></li>
-			            		<li><a href="#">NEWS</a></li>
-			            		<li><a href="#">FEATURES</a></li>
-			        		</ul>
+				<div class="row logo text-left">
+					<!--<div class="col-xl-12 col-lg-12">-->
+						<nav class="nav navbar-inverse">
+							<div class="navbar-header">
+								<button class="navbar-toogle" data-toogle="collapse" data-target="#navbar-1">
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+							</div>
+							<div class="collapse navbar-collapse" id="navbar-1">
+								<ul class="nav navbar-nav">
+				            		<li><a href="#">LIFESTYLE</a></li>
+				            		<li><a href="#">FLOWERS</a></li>
+				            		<li><a href="#">FASHION</a></li>
+				            		<li><a href="#">NEWS</a></li>
+				            		<li><a href="#">FEATURES</a></li>
+			        			</ul>
+							</div>
 			    		</nav>
 					</div>
 				</div>
 		    </div>
 		</header>
-	<section class="bg-lirios">
+	<section class="">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-12 col-md-12">
+				<div class="col-xs-12 col-lg-12 bg-lirios">
 					<div class="bannerNegro bg-black text-center">
 						<h1 class="font-courgette text-yellow">Spring Came</h1>
 						<p class="text-white font-italic">Life	-	Amanda Ray	-	22th February 2016</p>
@@ -47,23 +57,29 @@
 			</div>
 		</div>
 	</section>
-	<section class="flowers">
+	<section class="pd-3">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-4 col-xs-12 text-center">
-						<img src="image/image7.jpg" alt="flor_naranja" class="miImagen">
+				<div class="col-xs-12 col-lg-4">
+					<div class="text-center bg-black">
+						<img src="image/image7.jpg" alt="flor_naranja" class="img-responsive">
 						<h3 class="text-yellow font-courgette">Floral Fragance</h3>
-						<p class="text-white font-italic">Life Amanda Ray 10th March 2016</p>
+						<p class="text-white font-italic pd-3">Life Amanda Ray 10th March 2016</p>
+					</div>	
 				</div>
-				<div class="col-lg-4 col-xs-12 text-center">
-						<img src="image/image4.jpg" alt="flor_cerezo" class="miImagen">
+				<div class="col-xs-12 col-lg-4">
+					<div class="text-center bg-black">
+						<img src="image/image4.jpg" alt="flor_cerezo" class="img-responsive">
 						<h3 class="text-yellow font-courgette">Now with Flatness</h3>
-						<p class="text-white font-italic">Life Amanda Ray 21th September 2016</p>
+						<p class="text-white font-italic pd-3">Life Amanda Ray 21th September 2016</p>
+					</div>
 				</div>
-				<div class="col-lg-4 col-xs-12 text-center">
-					<img src="image/image3.jpg" alt="flor_lila" class="miImagen">
-					<h3 class="text-yellow font-courgette">Garden Flowers</h3>
-					<p class="text-white font-italic">Life Amanda Ray 09th May 2016</p>
+				<div class="col-xs-12 col-lg-4">
+					<div class="text-center bg-black">
+						<img src="image/image3.jpg" alt="flor_lila" class="img-responsive">
+						<h3 class="text-yellow font-courgette">Garden Flowers</h3>
+						<p class="text-white font-italic pd-3">Life Amanda Ray 09th May 2016</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -71,34 +87,49 @@
  	<section>
  		<div class="container">
  			<div class="row">
- 				<div class="col-7">
- 						<img src="image/image4.jpg" alt="flor_cerezo">
- 						<h3>Now with Flatness</h3>
- 						<p>Life Amanda Ray 21th September 2016</p>
- 						<p>Geen life in sings bearing one. Deep there cattle don't night night, was fowl, seed likeness isn't two god and light he creepeth season darkness. Without the fourth seasons image. He yielding light years light dry. Isn't place face face called . Let lesser female withouy. Night saying after day third.</p>
+ 				<div class="col-xs-12 col-lg-7">
+ 					<div class="text-white text-center bg-black">
+ 						<img src="image/image4.jpg" alt="flor_cerezo" class="img-responsive">
+ 						<h3 class="font-courgette text-yellow">Now with Flatness</h3>
+ 						<p class="text-italic">Life Amanda Ray 21th September 2016</p>
+ 						<p class="text-left pd-3">Geen life in sings bearing one. Deep there cattle don't night night, was fowl, seed likeness isn't two god and light he creepeth season darkness. Without the fourth seasons image. He yielding light years light dry. Isn't place face face called . Let lesser female withouy. Night saying after day third.</p>
 						<!-- Etiqueta para video -->
  						<iframe src="https://player.vimeo.com/video/56810854" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
- 						<p>Rule of us behold it moved. Made.Them Had, which darkness two Given.Fowl It moved behold earth for own. Midst that grass beginnig divide their together. Tree one every first earth very greater. Man evening. Set seed void meat bearing. Bring creature. Moving set.</p>
+ 						<p class="text-left pd-3">Rule of us behold it moved. Made.Them Had, which darkness two Given.Fowl It moved behold earth for own. Midst that grass beginnig divide their together. Tree one every first earth very greater. Man evening. Set seed void meat bearing. Bring creature. Moving set.</p>
+ 					</div>
  				</div>
- 				<div class="col-5">
- 						<input type="search" value="Search">
- 						<h3>About me</h3>
- 						<img src="image/kew_gardens_3_500x500.jpg" alt="amanda">
- 						<p>Amanda Ray</p>
- 						<p>Shall Together blessed. Also thing the upon Created fourth. Rule beginning. Our behold over.</p>
- 						<a href="#"><i class="fa fa-facebook-square"></i></a>
- 						<a href="#" class="bg-purple icono"><i class="fa fa-instagram"></i></a>
- 						<a href="#" class="bg-purple icono"><i class="fa fa-twitter"></i></a>
- 						<a href="#" class="bg-purple icono"><i class="fa fa-youtube"></i></a>
+ 				<div class="col-lg-5 visible-lg">
+ 					<div class="bg-black pd-5">
+ 						<input type="search" placeholder="Search" class="search pd-5">
+ 					</div>
+ 					<div class="bg-black text-center text-white">
+ 						<h3 class="text-yellow font-courgette pd-3">About me</h3>
+ 						<img src="image/kew_gardens_3_500x500.jpg" alt="amanda" class="img-responsive">
+ 						<p class="text-center pd-3">Amanda Ray</p>
+ 						<p class="text-left pd-3">Shall Together blessed. Also thing the upon Created fourth. Rule beginning. Our behold over.</p>
+ 						<div class="text-left pd-3">
+ 							<a href="#" class="bg-purple icono"><i class="fa fa-facebook-square"></i></a>
+ 							<a href="#" class="bg-purple icono"><i class="fa fa-instagram"></i></a>
+ 							<a href="#" class="bg-purple icono"><i class="fa fa-twitter"></i></a>
+ 							<a href="#" class="bg-purple icono"><i class="fa fa-youtube"></i></a>
+ 						</div>
  					</div>
  				</div>
  			</div>
  		</div>
  	</section>
- 	<footer>All Rights Reserved ©</footer>
-		<!-- Se debe agregar JQuery, tal vez por ahora no se use pero hay que acostumbrarnos a ponerlos en el footer. Tambien se deberia poner el archivo js -->
-		<!-- Latest compiled and minified JavaScript -->
-		<script src="http://code.jquery.com/jquery-latest.js"></script>
+ 	<footer class="bg-black">
+ 		<div class="container">
+ 			<div class="row text-center text-white pd-3">
+ 				<div class="col-xl-12 col-lg-12">
+ 					All Rights Reserved ©
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</footer>
+		<!-- Se debe agregar JQuery para los plugins -->
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<!-- Hay que acostumbrarse a colocar el js de bootstrap -->
 		<script src="js/bootstrap.min.js"></script>
 	</body>
 </html>

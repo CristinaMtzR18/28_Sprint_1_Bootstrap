@@ -14,13 +14,9 @@ a{
 	text-decoration: none;
 }
 								/*** HEADER ***/
-header, nav{
-    display: block;
-}
 header{
     background: #1c1821;
-    position: relative;
-    height: 100px;
+    height: 25%;
     width: 100%;
 }
 /*Para el logo*/
@@ -32,88 +28,32 @@ header{
     width: 275px;
     height: 80px;
 }
-/*Estilos para el menu*/
-.menu{
-    float: right;
-    padding: 30px 40px;
-}   
-#btn-menu{
-	display: none;
-}
-header label{
-	display: none;
-	padding: 7%;
-	border-right: 1px solid #fff;
-}
-header label:hover{
-	cursor: pointer;
-}
-.menu ul{
-	list-style: none;
-	padding: 0;
-	display: flex;
-	justify-content: flex-end;
-}
-.menu li a {
-	display: block;
-	padding: 15px 20px;
-	color: #fff;
-	text-decoration: none;
-}
-
 								/*** BANNER ***/
 
 .bg-lirios{
 	background: url("../image/header-image.jpg");
-	background-size: 100%;
-	width: 90%;
-	height: 500px;
-	margin: 3% 10%;
+	background-size: cover;
+	padding: 3%
 }
 
 .bannerNegro{
 	width: 50%;
-	height: 230px;
-	margin: 15%;
-	padding: 2%;
+	height: 220px;
+	margin: 10% 25%;
+	padding: 3%;
 }
 
-.bannerNegro h1{
-	font-size: 650%;
-}
-
-								/*** FLORES ***/
-
-.flowers p{
-	padding: 10px 0 20px 0;
-}
-
-.flowers h3{
-	margin-top: 10px;
-}
-/****ARTICLE*****/
-.article h3{
-	padding-top: 10px;
-}
-
-.article p{
-	padding: 10px;
-}
-								/*** BUSQUEDA ***/
+							/*** BUSQUEDA ***/
 .search{
 	display: block;
 	margin: auto;
-	border: none;
+	border-radius: 4px;
 	width: 100%;
 	height: 50px;
 	color: white;
-	font-size: 1rem;
+	font-size: 3rem; /*Nueva medida de tamaño de fuente, aun no comprendo bien*/
 }
-
-.about-me{
-	margin-top: 10px;
-}
-
+							/*** REDES SOCIALES ***/
 .icono{
 	height: 35px;
 	width: 35px;
@@ -123,7 +63,7 @@ header label:hover{
 	display: inline-block;
 	color: white;
 }
-
+							/*** VIDEO ***/
 iframe{
 	width: 100%;
 	height: 350px;
@@ -144,16 +84,6 @@ iframe{
 .text-white{
 	color: white;
 }
-/*Alineacion de texto*/
-.text-center{
-	text-align: center;
-}
-.text-right{
-	text-align: right;
-}
-.text-left{
-	text-align: left;
-}
 /*Estilos de fuente*/
 .font-courgette{
 	font-family: 'Courgette';
@@ -169,40 +99,8 @@ iframe{
 	padding: 5%;
 }
 
-/*Imagenes*/
-.miImagen{
-	margin-top: 3%;
-	height: 90%;
-	width: 100%;
-}
-/*Tipos de borde*/
-.radius-4p{
-	border-radius: 4px;
-}
 								/*** Responsive ***/
 @media screen and (max-width : 600px) {
-	
-	/*Instrucciones para el menu*/
-	header label{
-		display: block;
-	}
-	.menu{
-		position: absolute;
-		width: 30%;
-		margin-left: -200%
-	}
-	.menu ul{
-		flex-direction: column;
-	}
-	.menu li{
-		border-top: 1px solid #fff;
-	}
-	/* ~ Va a buscar la clase menu para desplegar los elementos cuando se activa el check*/
-	#btn-menu: checked ~ .menu {
-		margin: 0;
-	}
 }
-
 @media screen and (max-width: 920px) {
-
 }
