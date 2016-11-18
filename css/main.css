@@ -1,17 +1,21 @@
 	/*** Inserta tu codigo aqui ***/
-								/*** GENERAL ***/
+		/*** GENERAL ***/
 *{
     margin: 0;
     padding: 0;
     /*Las fuentes que estan saque de google font*/
     font-family: 'Open Sans', 'Courgette';
 }
-							/*** HEADER ***/
+		/*** HEADER ***/
 header{
     background-color: #1c1821;
 }
 nav.navbar {
     background-color: #1c1821;
+}
+
+.navbar-inverse{
+	border: none;
 }
 /*Para el logo*/
 .logo{
@@ -19,11 +23,11 @@ nav.navbar {
     width: 275px;
     height: 80px;
 }
-								/*** BANNER ***/
+		/*** BANNER ***/
 .bg-lirios{
 	background: url("../image/header-image.jpg");
 	background-size: cover;
-	padding: 3%
+	padding: 3%;
 }
 .bannerNegro{
 	width: 50%;
@@ -31,15 +35,15 @@ nav.navbar {
 	margin: 10% 25%;
 	padding: 3%;
 }
-							/*** BUSQUEDA ***/
+		/*** BUSQUEDA ***/
 .search{
 	border-radius: 4px;
 	width: 100%;
 	height: 50px;
 	color: white;
-	font-size: 3rem; /*Nueva medida de tamaño de fuente, aun no comprendo bien*/
+	font-size: 3rem; 
 }
-							/*** REDES SOCIALES ***/
+		/*** REDES SOCIALES ***/
 .icono{
 	height: 30px;
 	width: 30px;
@@ -49,12 +53,12 @@ nav.navbar {
 	display: inline-block;
 	color: white;
 }
-							/*** VIDEO ***/
+		/*** VIDEO ***/
 iframe{
 	width: 100%;
 	height: 350px;
 }
-								/*** UTILITIES ***/
+		/*** UTILITIES ***/
 /*Fondos de color*/
 .bg-purple{
 	background-color: #2D2735;
@@ -83,11 +87,4 @@ iframe{
 .pd-5{
 	padding: 5%;
 }
-								/*** Responsive ***/
-/*Desde mi punto de vista, estas media queries ya no son necesarios porque en Bootstrap ya estan definidos cuatro
-breakpoints que nos ayudan a que la página sea responsive, para este ejercicio solo se usaron dos, la que marca para
-celuar y pantalla de computadora*/
-@media screen and (max-width : 600px) {
-}
-@media screen and (max-width: 920px) {
-}
+
